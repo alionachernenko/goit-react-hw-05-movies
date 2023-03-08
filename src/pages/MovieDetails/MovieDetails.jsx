@@ -2,9 +2,9 @@ import { useEffect, useState, Suspense } from "react"
 import { Link, Outlet, useParams, useLocation} from "react-router-dom"
 import { getMovieById } from "services/api"
 
-import { Info, Poster, Meta, Tab, Tabs, Genres } from "./About.styled"
+import { Info, Poster, Meta, Tab, Tabs, Genres } from "./MovieDetails.styled"
 
-const About = () => {
+const MovieDetails = () => {
     
     const [title, setTitle] = useState('')
     const [posterLink, setPosterLink] = useState('')
@@ -36,7 +36,7 @@ const About = () => {
 
     return(
         <div>
-            <Link to={backLink}>Back to products</Link>
+            <Link to={backLink}>Back to movies</Link>
             <Info>
             <Poster src={`https://image.tmdb.org/t/p/original/${posterLink}`} alt={`${title} poster`} />
             <Meta>
@@ -64,5 +64,5 @@ const About = () => {
     )
 }
 
-export default About
+export default MovieDetails
 

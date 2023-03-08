@@ -2,11 +2,12 @@ import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { Header, Tab } from "./App.styled";
 
-const Home = lazy(() => import('pages/Home/Home'))
-const MovieDetails = lazy(() => import('pages/MovieDetails/MovieDetails'))
-const Cast = lazy(() => import('pages/Cast/Cast'))
-const Reviews = lazy(() => import('pages/Reviews/Reviews'))
-const Movies = lazy(() => import('pages/Movies/Movies'))
+const Home = lazy(() => import('pages/Home/Home.jsx'))
+const Movies = lazy(() => import('pages/Movies/Movies.jsx'))
+const MovieDetails = lazy(() => import('pages/MovieDetails/MovieDetails.jsx'))
+const Cast = lazy(() => import('pages/Cast/Cast.jsx'))
+const Reviews = lazy(() => import('pages/Reviews/Reviews.jsx'))
+
 
 export const App = () => {
   return (

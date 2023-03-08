@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { getTrendingMovies } from "services/api"
 import { MovieList } from "components/MovieList/MovieList"
 
-const Homepage = () => {
+const Home = () => {
     const [movies, setMovies] = useState([])
 
     useEffect(() => {
@@ -18,4 +18,4 @@ const Homepage = () => {
     )
 }
 
-export default Homepage
+export default Home
